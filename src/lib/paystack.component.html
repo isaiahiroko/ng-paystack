@@ -1,0 +1,4 @@
+<div id="paystack-embed-container" *ngIf="request.type == 'embed'"></div>
+<div id="paystack-inline-container" *ngIf="request.type == 'inline'">
+    <button type="button" (click)="payInline($event)" class="{{ request.classes }}" id="{{ request.id }}"> Pay </button> 
+</div>
